@@ -1,10 +1,10 @@
 import streamlit as st
 
-st.set_page_config(page_title="My Webpage", page_icon=":tada:",layout="wide")
+st.set_page_config(page_title="PGOS Website", page_icon=":music:",layout="wide")
 
 with st.container():
-    st.subheader("Hi, I am Vignesh :wave:")
-    st.title("A student from Singapore")
+    st.subheader("Project Gift of Song :music:")
+    st.title("To leverage music as a platform to bring joy and comfort to people at all stages of life, by providing learning opportunities to the community.")
     st.write("About ME")
     st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
 
