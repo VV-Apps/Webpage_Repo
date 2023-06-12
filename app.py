@@ -50,25 +50,25 @@ selected5 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'],
                         on_change=on_change, key='menu_5', orientation="horizontal")
 selected5
 
-with st.container():
-    st.title("A Youth Led Organisation")
-with st.container():
-    st.write("Vision & Mission")
-    st.subtitle("To leverage music as a platform to bring joy and comfort to people at all stages of life, by providing learning opportunities to the community.")
-    st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
+#with st.container():
+#    st.title("A Youth Led Organisation")
+#with st.container():
+#    st.write("Vision & Mission")
+#    st.subtitle("To leverage music as a platform to bring joy and comfort to people at all stages of life, by providing learning opportunities to the community.")
+#    st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
+#
+#with st.container():
+#    st.write("---")
+#    left_column, right_column = st.columns(2)
+#    with left_column:
+#        st.header("What I do")
+#        st.write("##")
+#        st.write(
+#            """
 
-with st.container():
-    st.write("---")
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.header("What I do")
-        st.write("##")
-        st.write(
-            """
 
+#
+#            """
+ #       )
 
-
-            """
-        )
-
-    st.write("[YouTube Channel 👈](https://youtube.com)")
+ #   st.write("[YouTube Channel 👈](https://youtube.com)")
