@@ -3,9 +3,11 @@ import streamlit as st
 st.set_page_config(page_title="PGOS Website", page_icon=":music:",layout="wide")
 
 with st.container():
-    st.subheader("Project Gift of Song :music:")
-    st.title("To leverage music as a platform to bring joy and comfort to people at all stages of life, by providing learning opportunities to the community.")
-    st.write("About ME")
+    st.title("A Youth Led Organisation")
+    st.subtitle("That hopes to leverage music as a platform to bring joy and comfort to people at all stages of life, by providing learning opportunities to the community.")
+with st.container():
+    st.write("Vision & Mission")
+    st.subtitle("To leverage music as a platform to bring joy and comfort to people at all stages of life, by providing learning opportunities to the community.")
     st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
 
 with st.container():
