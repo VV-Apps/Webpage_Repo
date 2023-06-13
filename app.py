@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Project Gift of Song", page_icon=":notes:", layout="wide")
 
 # Display the picture from the repository in the sidebar
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/PGOS.png", use_column_width=True)
@@ -27,7 +27,7 @@ if tabs:
 
 # Add other content in the main section
 with st.container():
-    if not any([st.session_state.get("Tab 1"), st.session_state.get("Tab 2"), st.session_state.get("Tab 3")]):
+    if not any([st.session_state.get("Vission & Mission"), st.session_state.get("Campaigns & Activities"), st.session_state.get("Join Us")]):
         st.title(":notes: Project Gift of Song")
         st.subheader("A student run organisation founded in Singapore")
         st.write("[Find out more about us 👈](https://tarannator.blogspot.com/)")
