@@ -2,8 +2,8 @@ import streamlit as st
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
-# Add a picture at the top left corner
-st.sidebar.image("C:\Users\Vignesh\Desktop\PGOS.png", use_column_width=True)
+# Display the picture from the repository in the sidebar
+st.sidebar.image("https://raw.githubusercontent.com/YourUsername/YourRepository/main/PGOS.png", use_column_width=True)
 
 # Add the title "PGOS" beside the picture
 st.sidebar.title("PGOS")
@@ -45,4 +45,3 @@ with st.container():
         )
 
 st.write("[YouTube Channel 👈](https://youtube.com)")
-
