@@ -3,7 +3,11 @@ import streamlit as st
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
 # Display the picture from the repository in the sidebar
-st.sidebar.image("https://raw.githubusercontent.com/YourUsername/YourRepository/main/PGOS.png", use_column_width=True)
+image_url = "https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/PGOS.png"
+response = requests.get(image_url)
+image = Image.open(BytesIO(response.content))
+
+st.sidebar.image(image, use_column_width=True)
 
 # Add the title "PGOS" beside the picture
 st.sidebar.title("PGOS")
