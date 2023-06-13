@@ -18,7 +18,7 @@ if tabs:
 tabs = st.sidebar.button("Campaigns & Activities")
 if tabs:
     st.title("Concerts")
-    st.suheader("Our Inaugural Music Concert")
+    st.subheader("Our Inaugural Music Concert")
     st.write("Our Inaugural Music Concert to be held at the end of the year (3rd Dec)")
 
 tabs = st.sidebar.button("Join Us")
