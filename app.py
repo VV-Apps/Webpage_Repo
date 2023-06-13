@@ -3,11 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
 # Display the picture from the repository in the sidebar
-image_url = "https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/PGOS.png"
-response = requests.get(image_url)
-image = Image.open(BytesIO(response.content))
-
-st.sidebar.image(image, use_column_width=True)
+st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/PGOS.png", use_column_width=True)
 
 # Add the title "PGOS" beside the picture
 st.sidebar.title("PGOS")
@@ -20,32 +16,32 @@ tabs = st.sidebar.multiselect(
 )
 
 # Render selected tabs
-for tab in tabs:
-    if tab == "Tab 1":
-        st.write("Content of Tab 1")
-    elif tab == "Tab 2":
-        st.write("Content of Tab 2")
-    elif tab == "Tab 3":
-        st.write("Content of Tab 3")
+if "Tab 1" in tabs:
+    st.write("Content of Tab 1")
+if "Tab 2" in tabs:
+    st.write("Content of Tab 2")
+if "Tab 3" in tabs:
+    st.write("Content of Tab 3")
 
 # Add other content in the main section
 with st.container():
-    st.subheader("Hi, I am Vignesh :wave:")
-    st.title("A student from Singapore")
-    st.write("About ME")
-    st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
+    if not tabs:  # Hide the main section content when tabs are selected
+        st.subheader("Hi, I am Vignesh :wave:")
+        st.title("A student from Singapore")
+        st.write("About ME")
+        st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
 
-with st.container():
-    st.write("---")
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.header("What I do")
-        st.write("##")
-        st.write(
-            """
-            
-            
-            """
-        )
+        st.write("---")
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.header("What I do")
+            st.write("##")
+            st.write(
+                """
+                
+                
+                """
+            )
 
 st.write("[YouTube Channel 👈](https://youtube.com)")
+
