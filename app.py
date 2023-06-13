@@ -9,23 +9,21 @@ st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/PG
 st.sidebar.title("PGOS")
 
 # Add tabs in a section next to the picture and title
-tabs = st.sidebar.multiselect(
-    "Select Tabs",
-    ["Tab 1", "Tab 2", "Tab 3"],
-    default=["Tab 1"]
-)
-
-# Render selected tabs
-if "Tab 1" in tabs:
+tabs = st.sidebar.button("Tab 1")
+if tabs:
     st.write("Content of Tab 1")
-if "Tab 2" in tabs:
+
+tabs = st.sidebar.button("Tab 2")
+if tabs:
     st.write("Content of Tab 2")
-if "Tab 3" in tabs:
+
+tabs = st.sidebar.button("Tab 3")
+if tabs:
     st.write("Content of Tab 3")
 
 # Add other content in the main section
 with st.container():
-    if not tabs:  # Hide the main section content when tabs are selected
+    if not any([st.session_state.get("Tab 1"), st.session_state.get("Tab 2"), st.session_state.get("Tab 3")]):
         st.subheader("Hi, I am Vignesh :wave:")
         st.title("A student from Singapore")
         st.write("About ME")
