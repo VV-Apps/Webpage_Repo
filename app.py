@@ -25,26 +25,22 @@ tabs = st.sidebar.button("Join Us")
 if tabs:
     st.title("Structure")
 
-    #any([st.session_state.get("Tab 1"), st.session_state.get("Tab 2"), st.session_state.get("Tab 3")])
 # Add other content in the main section
 with st.container():
-    if not tabs:
-        st.subheader("Hi, I am Vignesh :wave:")
-        st.title("A student from Singapore")
-        st.write("About ME")
-        st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
+    if not any([st.session_state.get("Tab 1"), st.session_state.get("Tab 2"), st.session_state.get("Tab 3")]):
+        st.title(":notes: Project Gift of Song")
+        st.subheader("A student run organisation founded in Singapore")
+        st.write("[Find out more about us 👈](https://tarannator.blogspot.com/)")
 
         st.write("---")
         left_column, right_column = st.columns(2)
         with left_column:
-            st.header("What I do")
+            st.header("Latest Events")
             st.write("##")
             st.write(
-                """
-                
-                
-                """
+                "Electrical Boogaloo"
+                "Electrical Boogaloo Part 2"
             )
 
-st.write("[YouTube Channel 👈](https://youtube.com)")
+st.write("[Our Very Own YouTube Channel 👈](https://youtube.com)")
 
