@@ -1,13 +1,11 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 
-st.set_page_config(page_title="PGOS Website", page_icon=":music:",layout="wide")
+st.set_page_config(page_title="My Webpage", page_icon=":tada:",layout="wide")
 
 with st.container():
-    st.title("A Youth Led Organisation")
-with st.container():
-    st.write("Vision & Mission")
-    st.subtitle("To leverage music as a platform to bring joy and comfort to people at all stages of life, by providing learning opportunities to the community.")
+    st.subheader("Hi, I am Vignesh :wave:")
+    st.title("A student from Singapore")
+    st.write("About ME")
     st.write("[Learn More 👈](https://tarannator.blogspot.com/)")
 
 with st.container():
@@ -22,6 +20,6 @@ with st.container():
 
 
             """
-       )
+        )
 
-st.write("[YouTube Channel 👈](https://youtube.com)")
+    st.write("[YouTube Channel 👈](https://youtube.com)")
