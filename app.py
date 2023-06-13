@@ -6,20 +6,24 @@ st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/PGOS.png", use_column_width=True)
 
 # Add the title "PGOS" beside the picture
-st.sidebar.title("PGOS")
+st.sidebar.title("Project Gift of Song")
 
 # Add tabs in a section next to the picture and title
-tabs = st.sidebar.button("Tab 1")
+tabs = st.sidebar.button("About Us")
 if tabs:
-    st.write("Content of Tab 1")
+    st.title("Aims")
+    st.subheader("Vission & Mission")
+    st.write("Founded by a group of zealous youths with a passion for music, Project Gift of Song aims to bridge the gap between music and terminal illnesses. We wish to bring joy and comfort to all stages of life through the spread of music.")
 
-tabs = st.sidebar.button("Tab 2")
+tabs = st.sidebar.button("Campaigns & Activities")
 if tabs:
-    st.write("Content of Tab 2")
+    st.title("Concerts")
+    st.suheader("Our Inaugural Music Concert")
+    st.write("Our Inaugural Music Concert to be held at the end of the year (3rd Dec))
 
-tabs = st.sidebar.button("Tab 3")
+tabs = st.sidebar.button("Join Us")
 if tabs:
-    st.write("Content of Tab 3")
+    st.title("Structure")
 
     #any([st.session_state.get("Tab 1"), st.session_state.get("Tab 2"), st.session_state.get("Tab 3")])
 # Add other content in the main section
