@@ -27,7 +27,7 @@ if tabs:
 
 # Add other content in the main section
 with st.container():
-    if not any([st.session_state.get("Vission & Mission"), st.session_state.get("Campaigns & Activities"), st.session_state.get("Join Us")]):
+    if not any([st.session_state.get("About Us"), st.session_state.get("Campaigns & Activities"), st.session_state.get("Join Us")]):
         st.title(":notes: Project Gift of Song")
         st.subheader("A student run organisation founded in Singapore")
         st.write("[Find out more about us 👈](https://tarannator.blogspot.com/)")
