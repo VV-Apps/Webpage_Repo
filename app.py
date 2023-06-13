@@ -21,9 +21,10 @@ tabs = st.sidebar.button("Tab 3")
 if tabs:
     st.write("Content of Tab 3")
 
+    #any([st.session_state.get("Tab 1"), st.session_state.get("Tab 2"), st.session_state.get("Tab 3")])
 # Add other content in the main section
 with st.container():
-    if not any([st.session_state.get("Tab 1"), st.session_state.get("Tab 2"), st.session_state.get("Tab 3")]):
+    if not tabs:
         st.subheader("Hi, I am Vignesh :wave:")
         st.title("A student from Singapore")
         st.write("About ME")
