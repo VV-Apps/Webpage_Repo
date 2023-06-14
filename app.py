@@ -5,8 +5,6 @@ st.set_page_config(page_title="VV", page_icon=":wave:", layout="wide")
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
 st.sidebar.title("VV_Webpage")
 
-lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-
 tabs1 = st.sidebar.button("About Me")
 tabs2 = st.sidebar.button("Resume")
 tabs3 = st.sidebar.button("Contact Me")
@@ -62,6 +60,6 @@ with st.container():
                 """)
             st.write("")
         with right_column:
-            st_lottie(lottie_coding, height=300, key="coding")
+            st.write("Yes")
 
     st.write("[My YouTube Channel 👈](https://youtube.com)")
