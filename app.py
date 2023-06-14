@@ -1,6 +1,23 @@
+import requests
 import streamlit as st
+from streamlit_lottie import st_lottie
+from PIL import Image
 
 st.set_page_config(page_title="VV", page_icon=":wave:", layout="wide")
+
+
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+local_css("style/style.css")
+lottie_coding = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_au98facn.json")
+
 
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
 st.sidebar.title("VV_Webpage")
@@ -60,6 +77,6 @@ with st.container():
                 """)
             st.write("")
         with right_column:
-            st.write("Yes")
+            st_lottie(lottie_coding, height=300, key="coding")
 
     st.write("[My YouTube Channel 👈](https://youtube.com)")
