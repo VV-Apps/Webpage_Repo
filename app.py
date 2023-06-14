@@ -49,24 +49,24 @@ with st.container():
         st.subheader("A student in Singapore")
         st.write("[Find out more about me 👈](https://tarannator.blogspot.com/)")
         
-    with st.container():
-            st.write("""
-                    On my YouTube channel I am creating tutorials for people who:
-                    - are looking for a way to leverage the power of Python in their day-to-day work.
-                    - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
-                    - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-                    - are working with Excel and found themselves thinking - "there has to be a better way."
-
-                    If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
-
-                    """)
-
-            left_column, right_column = st.columns(2)
-            with left_column:
-                st.header("Latest Updates")
+        with st.container():
                 st.write("""
-                IN THE OVEN
-                """)
-            with right_column:
-                components.html('<lottie-player src="{}" background="transparent" speed="1" style="width: 300px; height: 300px;"></lottie-player>'.format(lottie_url), height=300)          
-            st.write("[My YouTube Channel 👈](https://youtube.com)")
+                        On my YouTube channel I am creating tutorials for people who:
+                        - are looking for a way to leverage the power of Python in their day-to-day work.
+                        - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
+                        - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
+                        - are working with Excel and found themselves thinking - "there has to be a better way."
+
+                        If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+
+                        """)
+
+                left_column, right_column = st.columns(2)
+                with left_column:
+                    st.header("Latest Updates")
+                    st.write("""
+                    IN THE OVEN
+                    """)
+                with right_column:
+                    components.html('<lottie-player src="{}" background="transparent" speed="1" style="width: 300px; height: 300px;"></lottie-player>'.format(lottie_url), height=300)          
+                st.write("[My YouTube Channel 👈](https://youtube.com)")
