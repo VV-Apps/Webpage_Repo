@@ -15,26 +15,37 @@ tabs3 = st.sidebar.button("Contact Me")
 
 # Create empty placeholders for tab contents
 about_us_placeholder = st.empty()
-campaigns_placeholder = st.empty()
-join_us_placeholder = st.empty()
+resume_placeholder = st.empty()
+contact_placeholder = st.empty()
 
 # Update tab content based on button press
 if tabs1:
+    about_us_placeholder.title("About Me")
     about_us_placeholder.subheader("Vision")
+    about_us_placeholder.write("Founded by a group of zealous youths with a passion for music, Project Gift of Song aims to bridge the gap between music and terminal illnesses. We wish to bring joy and comfort to all stages of life through the spread of music.")
+    about_us_button = about_us_placeholder.button("Back to Main Page")
+    if about_us_button:
+        st.experimental_set_query_params()
 else:
     about_us_placeholder.empty()
 
 if tabs2:
-    campaigns_placeholder.title("Resume")
-    campaigns_placeholder.subheader("Education")
-#    campaigns_placeholder.write("Our Inaugural Music Concert to be held at the end of the year (3rd Dec)")
+    resume_placeholder.title("Resume")
+    resume_placeholder.subheader("Education")
+    resume_placeholder.write("Educational details go here.")
+    resume_button = resume_placeholder.button("Back to Main Page")
+    if resume_button:
+        st.experimental_set_query_params()
 else:
-    campaigns_placeholder.empty()
+    resume_placeholder.empty()
 
 if tabs3:
-    join_us_placeholder.title("Contact Me")
+    contact_placeholder.title("Contact Me")
+    contact_button = contact_placeholder.button("Back to Main Page")
+    if contact_button:
+        st.experimental_set_query_params()
 else:
-    join_us_placeholder.empty()
+    contact_placeholder.empty()
 
 # Add other content in the main section
 with st.container():
@@ -48,7 +59,5 @@ with st.container():
         with left_column:
             st.header("Latest Updates")
             st.write("##")
-            st.write(
-                ""
-            )
+            st.write("")
     st.write("[My YouTube Channel 👈](https://youtube.com)")
