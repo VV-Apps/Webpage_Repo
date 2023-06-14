@@ -59,12 +59,9 @@ with st.container():
         st.title(":grinning: Vignesh")
         st.subheader("A student in Singapore")
         st.write("[Find out more about me 👈](https://tarannator.blogspot.com/)")
-
-        st.write("---")
-        left_column, right_column = st.columns(2)
-        with left_column:
-            st.header("Latest Updates")
-            st.write("""
+        
+with st.container():
+        st.write("""
                 On my YouTube channel I am creating tutorials for people who:
                 - are looking for a way to leverage the power of Python in their day-to-day work.
                 - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
@@ -72,7 +69,12 @@ with st.container():
                 - are working with Excel and found themselves thinking - "there has to be a better way."
 
                 If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+        
                 """)
+        
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.header("Latest Updates")
             st.write("")
         with right_column:
             st_lottie(lottie_coding, height=300, key="coding")
