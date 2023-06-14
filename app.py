@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-import streamlit.components.v1 as components
+from streamlit_lottie import st_lottie
 from PIL import Image
 
 st.set_page_config(page_title="VV", page_icon=":wave:", layout="wide")
