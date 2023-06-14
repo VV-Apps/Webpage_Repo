@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="VV", page_icon=":waving:", layout="wide")
+st.set_page_config(page_title="VV", page_icon=":wave:", layout="wide")
 
 # Display the picture from the repository in the sidebar
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
