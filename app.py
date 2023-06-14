@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="VV", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="VV", page_icon=":waving:", layout="wide")
 
 # Display the picture from the repository in the sidebar
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
@@ -39,7 +39,7 @@ else:
 # Add other content in the main section
 with st.container():
     if not any([tabs1, tabs2, tabs3]):
-        st.title(":tada: VV")
+        st.title(":grinning: VV")
         st.subheader("A student in Singapore")
         st.write("[Find out more about me 👈](https://tarannator.blogspot.com/)")
 
