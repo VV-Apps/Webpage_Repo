@@ -6,8 +6,6 @@ st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/Th
 st.sidebar.title("VV_Webpage")
 
 lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-img_contact_form = Image.open("images/yt_contact_form.png")
-img_lottie_animation = Image.open("images/yt_lottie_animation.png")
 
 tabs1 = st.sidebar.button("About Me")
 tabs2 = st.sidebar.button("Resume")
@@ -51,18 +49,19 @@ with st.container():
 
         st.write("---")
         left_column, right_column = st.columns(2)
-        with left_column:
-            st.header("Latest Updates")
-            st.write("""
-            On my YouTube channel I am creating tutorials for people who:
-            - are looking for a way to leverage the power of Python in their day-to-day work.
-            - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
-            - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-            - are working with Excel and found themselves thinking - "there has to be a better way."
+            with left_column:
+                st.header("Latest Updates")
+                st.write("""
+                On my YouTube channel I am creating tutorials for people who:
+                - are looking for a way to leverage the power of Python in their day-to-day work.
+                - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
+                - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
+                - are working with Excel and found themselves thinking - "there has to be a better way."
 
-            If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
-            """)
-            st.write("")
-         with right_column:
-            st_lottie(lottie_coding, height=300, key="coding")
+                If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+                """)
+                st.write("")
+            with right_column:
+                st_lottie(lottie_coding, height=300, key="coding")
+
     st.write("[My YouTube Channel 👈](https://youtube.com)")
