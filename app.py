@@ -63,7 +63,7 @@ with st.container():
 
                 left_column, right_column = st.columns(2)
                 with left_column:
-                    st.header("Latest Updates")
+                    st.header("My Works")
                     st.write("""
                     IN THE OVEN
                     """)
