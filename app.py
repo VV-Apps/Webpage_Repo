@@ -41,7 +41,7 @@ with st.container():
 
 with st.container():
     if not any([tabs1, tabs2, tabs3]):
-        st.title(":grinning: VV")
+        st.title(":grinning: Vignesh")
         st.subheader("A student in Singapore")
         st.write("[Find out more about me 👈](https://tarannator.blogspot.com/)")
 
@@ -49,6 +49,14 @@ with st.container():
         left_column, right_column = st.columns(2)
         with left_column:
             st.header("Latest Updates")
-            st.write("##")
+            st.write("""
+            On my YouTube channel I am creating tutorials for people who:
+            - are looking for a way to leverage the power of Python in their day-to-day work.
+            - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
+            - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
+            - are working with Excel and found themselves thinking - "there has to be a better way."
+
+            If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+            """)
             st.write("")
     st.write("[My YouTube Channel 👈](https://youtube.com)")
