@@ -1,9 +1,10 @@
 import requests
 import streamlit as st
-#from streamlit_lottie import st_lottie
+import json
+from streamlit_lottie import st_lottie
 from PIL import Image
 
-st.set_page_config(page_title="VV", page_icon=":wave:", layout="wide")
+st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
 
 #def load_lottieurl(url):
 #    r = requests.get(url)
@@ -16,9 +17,18 @@ st.set_page_config(page_title="VV", page_icon=":wave:", layout="wide")
 #local_css("style/style.css")
 #lottie_coding = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_au98facn.json")
 
+url = requests.get(
+    "https://assets4.lottiefiles.com/packages/lf20_au98facn.json")
+url_json = dict()
+  
+if url.status_code == 200:
+    url_json = url.json()
+else:
+    print("Error in the URL")
+    
 
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
-st.sidebar.title("VV_Webpage")
+st.sidebar.title("Vignesh_Webpage")
 
 tabs1 = st.sidebar.button("About Me")
 tabs2 = st.sidebar.button("Resume")
@@ -75,8 +85,9 @@ with st.container():
         left_column, right_column = st.columns(2)
         with left_column:
             st.header("Latest Updates")
-            st.write("")
+            st.write("""
+            IN THE OVEN
+            """)
         with right_column:
-            st_lottie(lottie_coding, height=300, key="coding")
-
+            st_lottie(url_json)           
         st.write("[My YouTube Channel 👈](https://youtube.com)")
