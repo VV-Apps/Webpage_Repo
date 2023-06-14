@@ -16,7 +16,7 @@ contact_placeholder = st.empty()
 
 with st.container():
     if tabs1:
-        st.empty(title("About Me"))
+        st.empty().title("About Me")
         about_me_placeholder.subheader("Vision")
         about_me_placeholder.write("Founded by a group of zealous youths with a passion for music, Project Gift of Song aims to bridge the gap between music and terminal illnesses. We wish to bring joy and comfort to all stages of life through the spread of music.")
         about_me_button = about_us_placeholder.button("Back to Main Page")
