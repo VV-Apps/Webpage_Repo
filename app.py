@@ -5,8 +5,6 @@ from PIL import Image
 
 st.set_page_config(page_title="VV", page_icon=":wave:", layout="wide")
 
-
-
 #def load_lottieurl(url):
 #    r = requests.get(url)
 #    if r.status_code != 200:
