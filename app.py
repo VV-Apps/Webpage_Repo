@@ -20,10 +20,9 @@ join_us_placeholder = st.empty()
 
 # Update tab content based on button press
 if tabs1:
-    with st.container():
-        about_us_placeholder.title("Aims")
-        about_us_placeholder.subheader("Vision & Mission")
-        about_us_placeholder.write("Founded by a group of zealous youths with a passion for music, Project Gift of Song aims to bridge the gap between music and terminal illnesses. We wish to bring joy and comfort to all stages of life through the spread of music.")
+    about_us_placeholder.title("Aims")
+    about_us_placeholder.subheader("Vision & Mission")
+    about_us_placeholder.write("Founded by a group of zealous youths with a passion for music, Project Gift of Song aims to bridge the gap between music and terminal illnesses. We wish to bring joy and comfort to all stages of life through the spread of music.")
 else:
     about_us_placeholder.empty()
 
@@ -36,6 +35,7 @@ else:
 
 if tabs3:
     join_us_placeholder.title("Structure")
+    join_us_placeholder.write("Yes Hi")
 else:
     join_us_placeholder.empty()
 
