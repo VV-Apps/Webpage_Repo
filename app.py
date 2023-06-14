@@ -88,4 +88,4 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('Astro_Jellyyfish.png')    
+add_bg_from_local('Astro_Jellyfish.png')    
