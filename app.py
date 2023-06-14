@@ -29,13 +29,12 @@ else:
 if tabs2:
     campaigns_placeholder.title("Concerts")
     campaigns_placeholder.subheader("Our Inaugural Music Concert")
-    campaigns_placeholder.write("Our Inaugural Music Concert to be held at the end of the year (3rd Dec)")
+#    campaigns_placeholder.write("Our Inaugural Music Concert to be held at the end of the year (3rd Dec)")
 else:
     campaigns_placeholder.empty()
 
 if tabs3:
     join_us_placeholder.title("Structure")
-    join_us_placeholder.write("Yes Hi")
 else:
     join_us_placeholder.empty()
 
