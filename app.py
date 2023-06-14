@@ -4,7 +4,7 @@ from PIL import Image
 import streamlit.components.v1 as components
 st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
 
-lottie_url = "https://assets4.lottiefiles.com/packages/lf20_au98facn.json"
+#lottie_url = "https://assets4.lottiefiles.com/packages/lf20_au98facn.json"
     
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
 st.sidebar.title("Vignesh_Webpage")
@@ -68,5 +68,6 @@ with st.container():
                     IN THE OVEN
                     """)
                 with right_column:
-                    components.html('<lottie-player src="{}" background="transparent" speed="1" style="width: 300px; height: 300px;"></lottie-player>'.format(lottie_url), height=300)          
+                    gif_url = "https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.gif"
+                    st.image(gif_url, use_column_width=True)
                 st.write("[My YouTube Channel 👈](https://youtube.com)")
