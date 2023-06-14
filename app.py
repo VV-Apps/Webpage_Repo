@@ -90,27 +90,45 @@ with st.container():
 #    )
 #add_bg_from_local('Dark Planet.jpg')    
 
-import utils as utl
-from views import home,about,analysis,options,configuration
-
-st.set_page_config(layout="wide", page_title='Navbar sample')
-st.set_option('deprecation.showPyplotGlobalUse', False)
-utl.inject_custom_css()
-utl.navbar_component()
 
 def navigation():
-    route = utl.get_current_route()
-    if route == "home":
-        home.load_view()
-    elif route == "about":
-        about.load_view()
-    elif route == "analysis":
-        analysis.load_view()
-    elif route == "options":
-        options.load_view()
-    elif route == "configuration":
-        configuration.load_view()
-    elif route == None:
-        home.load_view()
-        
-navigation()
+    try:
+        path = st.experimental_get_query_params()['p'][0]
+    except Exception as e:
+        st.error('Please use the main app.')
+        return None
+    return path
+
+
+if navigation() == "home":
+    st.title('Home')
+    st.write('This is the home page.')
+
+elif navigation() == "results":
+    st.title('Results List')
+    for item in range(25):
+        st.write(f'Results {item}')
+
+elif navigation() == "analysis":
+    st.title('Analysis')
+    x, y = st.number_input('Input X'), st.number_input('Input Y')
+    st.write('Result: ' + str(x+y))
+
+elif navigation() == "examples":
+    st.title('Examples Menu')
+    st.write('Select an example.')
+
+
+elif navigation() == "logs":
+    st.title('View all of the logs')
+    st.write('Here you may view all of the logs.')
+
+
+elif navigation() == "verify":
+    st.title('Data verification is started...')
+    st.write('Please stand by....')
+
+
+elif navigation() == "config":
+    st.title('Configuration of the app.')
+    st.write('Here you can configure the application')
