@@ -46,18 +46,19 @@ with st.container():
 with st.container():
     if not any([tabs1, tabs2, tabs3]):
         st.title(":grinning: Vignesh")
+        st.sidebar.markdown("---")
         st.subheader("A student in Singapore")
         st.write("[Find out more about me 👈](https://tarannator.blogspot.com/)")
         
         with st.container():
                 st.write("""
-                        On my YouTube channel I am creating tutorials for people who:
-                        - are looking for a way to leverage the power of Python in their day-to-day work.
-                        - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
-                        - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-                        - are working with Excel and found themselves thinking - "there has to be a better way."
+                        I am a high school student who:
+                        - is on the lookout for internships and collaborations in the Science industries to boost my portfolio.
+                        - has recently found the use of Python for web-app designing intuitive and very interesting.
+                        - wants to learn and apply my knowledge for the betterment of mankind .
+                        - is a hard worker and have made good use of my 6 years in high school to participate in activities from DSO to A STAR Agency."
 
-                        If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+                        While for now this webpage is merely a trial run, I hope to expand this in the future to connect with other science enthusiasts.
 
                         """)
 
