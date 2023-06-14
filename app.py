@@ -49,9 +49,9 @@ with st.container():
 
         st.write("---")
         left_column, right_column = st.columns(2)
-            with left_column:
-                st.header("Latest Updates")
-                st.write("""
+        with left_column:
+            st.header("Latest Updates")
+            st.write("""
                 On my YouTube channel I am creating tutorials for people who:
                 - are looking for a way to leverage the power of Python in their day-to-day work.
                 - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
@@ -60,8 +60,8 @@ with st.container():
 
                 If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
                 """)
-                st.write("")
-            with right_column:
-                st_lottie(lottie_coding, height=300, key="coding")
+            st.write("")
+        with right_column:
+            st_lottie(lottie_coding, height=300, key="coding")
 
     st.write("[My YouTube Channel 👈](https://youtube.com)")
