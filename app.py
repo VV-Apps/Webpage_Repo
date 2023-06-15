@@ -29,7 +29,7 @@ st.markdown(
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        height: 100px;
+        height: 10px;
     }
     </style>
     """,
