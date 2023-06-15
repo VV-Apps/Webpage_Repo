@@ -17,7 +17,7 @@ background_image = "https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/
 # Set the link bar
 link_bar = "[Home](https://example.com/home) [About](https://example.com/about) [Contact](https://example.com/contact)"
 
-# Inject custom CSS to remove space at the top
+# Inject custom CSS to remove space at the top and adjust image size
 st.markdown(
     """
     <style>
@@ -31,8 +31,6 @@ st.markdown(
         background-size: cover;
         height: 100px;
         width: 100%;
-        object-fit: none;
-        object-position: center top;
     }
     </style>
     """,
@@ -40,8 +38,11 @@ st.markdown(
 )
 
 # Display the background image
-if background_image:
-    st.image(background_image, use_column_width=True)
+st.markdown(
+    """
+    <div class="background-image"></div>
+    """
+)
 
 # Display the link bar
 st.markdown(link_bar)
