@@ -12,6 +12,7 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
 
 
+# Inject custom CSS to style the links
 st.markdown(
     """
     <style>
@@ -20,10 +21,10 @@ st.markdown(
         display: inline-block;
         padding: 10px 20px;
         background-color: #f2f2f2;
-        color: #333333;
+        color: black;
         text-decoration: none;
         font-weight: bold;
-        border-radius: 5px;
+        border-radius: 10px;
         transition: background-color 0.3s ease;
     }
 
@@ -38,10 +39,11 @@ st.markdown(
 # Display the styled links
 st.markdown(
     """
-    [Home](https://example.com/home){.styled-link} 
-    [About](https://example.com/about){.styled-link} 
-    [Contact](https://example.com/contact){.styled-link}
-    """
+    <a href="https://example.com/home" class="styled-link">Home</a>
+    <a href="https://example.com/about" class="styled-link">About</a>
+    <a href="https://example.com/contact" class="styled-link">Contact</a>
+    """,
+    unsafe_allow_html=True
 )
 
 
