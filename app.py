@@ -29,19 +29,12 @@ st.markdown(
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        height: 100px;
-        width: 100%;
+        height: 10px;
+        width: 50%;
     }
     </style>
     """,
     unsafe_allow_html=True
-)
-
-# Display the background image
-st.markdown(
-    """
-    <div class="background-image"></div>
-    """
 )
 
 # Display the link bar
