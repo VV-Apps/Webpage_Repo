@@ -23,13 +23,16 @@ st.markdown(
     <style>
     .stApp {
         margin-top: 0;
-     }
+    }
     .background-image {
         background-image: url('"""+background_image+"""');
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        height: 10px;
+        height: 100px;
+        width: 100%;
+        object-fit: none;
+        object-position: center top;
     }
     </style>
     """,
