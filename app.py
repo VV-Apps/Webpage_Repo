@@ -1,11 +1,41 @@
+#import requests
+#import streamlit as st
+#from PIL import Image
+#import streamlit.components.v1 as components
+#st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
+
+#lottie_url = "https://assets4.lottiefiles.com/packages/lf20_au98facn.json"
 import requests
 import streamlit as st
 from PIL import Image
 import streamlit.components.v1 as components
 st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
 
-#lottie_url = "https://assets4.lottiefiles.com/packages/lf20_au98facn.json"
-    
+# Set the background image or link bar
+background_image = "https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png"
+link_bar = "[Home](https://example.com/home) [About](https://example.com/about) [Contact](https://example.com/contact)"
+
+# Inject custom CSS to remove space at the top
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        margin-top: 0;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Display the background image or link bar
+st.markdown(
+    f"""
+    <div style="background-image: url('{background_image}'); background-size: cover; height: 200px;"></div>
+    """
+    if background_image else
+    link_bar
+)
+
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
 st.sidebar.title("Vignesh_Webpage")
 
