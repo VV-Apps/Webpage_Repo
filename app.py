@@ -21,7 +21,7 @@ st.markdown(
         display: inline-block;
         padding: 7px 16px;
         background-color: #f2e9e4;
-        color: black;
+        color: black !important;
         text-decoration: none;
         font-weight: bold;
         border-radius: 10px;
