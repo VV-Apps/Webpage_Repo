@@ -19,7 +19,7 @@ st.markdown(
     /* Styling for the links */
     .styled-link {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 7px 16px;
         background-color: #f2e9e4;
         color: black;
         text-decoration: none;
@@ -29,7 +29,7 @@ st.markdown(
     }
 
     .styled-link:hover {
-        background-color: #dddddd;
+        background-color: #c9ada7;
     }
     </style>
     """,
