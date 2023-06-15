@@ -11,34 +11,38 @@ from PIL import Image
 import streamlit.components.v1 as components
 st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
 
-# Set the background image
-background_image = "https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png"
 
-# Set the link bar
-link_bar = "[Home](https://example.com/home) [About](https://example.com/about) [Contact](https://example.com/contact)"
-
-# Inject custom CSS to remove space at the top and adjust image size
 st.markdown(
     """
     <style>
-    .stApp {
-        margin-top: 0;
+    /* Styling for the links */
+    .styled-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f2f2f2;
+        color: #333333;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
     }
-    .background-image {
-        background-image: url('"""+background_image+"""');
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        height: 10px;
-        width: 50%;
+
+    .styled-link:hover {
+        background-color: #dddddd;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Display the link bar
-st.markdown(link_bar)
+# Display the styled links
+st.markdown(
+    """
+    [Home](https://example.com/home){.styled-link} 
+    [About](https://example.com/about){.styled-link} 
+    [Contact](https://example.com/contact){.styled-link}
+    """
+)
 
 
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
