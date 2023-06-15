@@ -20,12 +20,12 @@ st.markdown(
     .styled-link {
         display: inline-block;
         padding: 10px 20px;
-        background-color: #f2f2f2;
+        background-color: #f2e9e4;
         color: black;
         text-decoration: none;
         font-weight: bold;
         border-radius: 10px;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.4s ease;
     }
 
     .styled-link:hover {
