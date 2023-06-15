@@ -12,41 +12,6 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
 
 
-# Inject custom CSS to style the links
-st.markdown(
-    """
-    <style>
-    /* Styling for the links */
-    .styled-link {
-        display: inline-block;
-        padding: 7px 16px;
-        background-color: #f2e9e4;
-        color: black !important;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 10px;
-        transition: background-color 0.4s ease;
-    }
-
-    .styled-link:hover {
-        background-color: #c9ada7;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Display the styled links
-st.markdown(
-    """
-    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiIiN6go8X_AhX4yDgGHaybDlcQwqsBegQIDxAG&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU" class="styled-link">Home</a>
-    <a href="https://example.com/about" class="styled-link">Clownery</a>
-    <a href="https://example.com/contact" class="styled-link">Clownery</a>
-    """,
-    unsafe_allow_html=True
-)
-
-
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
 st.sidebar.title("Vignesh_Webpage")
 
@@ -86,6 +51,40 @@ with st.container():
 
 with st.container():
     if not any([tabs1, tabs2, tabs3]):
+        # Inject custom CSS to style the links
+        st.markdown(
+            """
+            <style>
+            /* Styling for the links */
+            .styled-link {
+                display: inline-block;
+                padding: 7px 16px;
+                background-color: #f2e9e4;
+                color: black !important;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 10px;
+                transition: background-color 0.4s ease;
+            }
+
+            .styled-link:hover {
+                background-color: #c9ada7;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+
+        # Display the styled links
+        st.markdown(
+            """
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiIiN6go8X_AhX4yDgGHaybDlcQwqsBegQIDxAG&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU" class="styled-link">Home</a>
+            <a href="https://example.com/about" class="styled-link">Clownery</a>
+            <a href="https://example.com/contact" class="styled-link">Clownery</a>
+            """,
+            unsafe_allow_html=True
+        )
+        
         st.title(":grinning: Vignesh")
         st.sidebar.markdown("---")
         st.subheader("A student in Singapore")
