@@ -39,9 +39,9 @@ st.markdown(
 # Display the styled links
 st.markdown(
     """
-    <a href="https://example.com/home" class="styled-link">Home</a>
-    <a href="https://example.com/about" class="styled-link">About</a>
-    <a href="https://example.com/contact" class="styled-link">Contact</a>
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiIiN6go8X_AhX4yDgGHaybDlcQwqsBegQIDxAG&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU" class="styled-link">Home</a>
+    <a href="https://example.com/about" class="styled-link">Clownery</a>
+    <a href="https://example.com/contact" class="styled-link">Clownery</a>
     """,
     unsafe_allow_html=True
 )
