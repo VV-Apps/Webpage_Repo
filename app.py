@@ -24,6 +24,12 @@ with st.container():
         st.empty().title("About Me")
         st.empty().subheader("Vision")
         st.empty().write("Man with a plan")
+        components.iframe(
+        src="https://open.spotify.com/embed/track/6Kg8KoSEacO0Y21pL0ZcDj?utm_source=generator",
+        width=600,  # You can adjust the width in pixels as needed
+        height=352,
+        scrolling=True
+        )
         about_me_button = st.empty().button("Back to Main Page")
         if about_me_button:
             st.experimental_set_query_params()
@@ -113,9 +119,4 @@ with st.container():
                     st.image(gif_url, use_column_width=True)
                 st.write("[My YouTube Channel 👈](https://youtube.com)")
 
-components.iframe(
-    src="https://open.spotify.com/embed/track/6Kg8KoSEacO0Y21pL0ZcDj?utm_source=generator",
-    width=600,  # You can adjust the width in pixels as needed
-    height=352,
-    scrolling=True
-)
+
