@@ -14,7 +14,7 @@ st.set_page_config(page_title="Vignesh", page_icon=":wave:", layout="wide")
 
 st.sidebar.image("https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.png", use_column_width=True)
 st.sidebar.title("Vignesh_Webpage")
-
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Kg8KoSEacO0Y21pL0ZcDj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 tabs1 = st.sidebar.button("About Me")
 tabs2 = st.sidebar.button("Resume")
 tabs3 = st.sidebar.button("Contact Me")
@@ -112,7 +112,8 @@ with st.container():
                     gif_url = "https://raw.githubusercontent.com/VV-Apps/Webpage_Repo/main/The Dark King.gif"
                     st.image(gif_url, use_column_width=True)
                 st.write("[My YouTube Channel 👈](https://youtube.com)")
-                
+
+
 #import base64
 #def add_bg_from_local(image_file):
 #    with open(image_file, "rb") as image_file:
