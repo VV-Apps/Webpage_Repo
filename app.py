@@ -21,11 +21,23 @@ tabs3 = st.sidebar.button("Contact Me")
 
 with st.container():
     if tabs1:
-        st.empty().title("About Me")
+        st.empty().title("Favourites")
         st.empty().subheader("Vision")
         st.empty().write("Man with a plan")
         components.iframe(
-        src="https://open.spotify.com/embed/track/6Kg8KoSEacO0Y21pL0ZcDj?utm_source=generator",
+        src="https://open.spotify.com/embed/track/3rUGC1vUpkDG9CZFHMur1t?utm_source=generator",
+        width=600,  # You can adjust the width in pixels as needed
+        height=352,
+        scrolling=True
+        )
+        components.iframe(
+        src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b?utm_source=generator ",
+        width=600,  # You can adjust the width in pixels as needed
+        height=352,
+        scrolling=True
+        )
+        components.iframe(
+        src="https://open.spotify.com/embed/track/6inzGTxyGsXVjpVKtFGrcE?utm_source=generator ",
         width=600,  # You can adjust the width in pixels as needed
         height=352,
         scrolling=True
