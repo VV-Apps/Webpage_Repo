@@ -113,10 +113,9 @@ with st.container():
                     st.image(gif_url, use_column_width=True)
                 st.write("[My YouTube Channel 👈](https://youtube.com)")
 
-
 components.iframe(
     src="https://open.spotify.com/embed/track/6Kg8KoSEacO0Y21pL0ZcDj?utm_source=generator",
-    width="100%",
+    width=600,  # You can adjust the width in pixels as needed
     height=352,
     scrolling=True
 )
