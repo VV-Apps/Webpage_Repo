@@ -1,2 +1,2 @@
 # Webpage_Repo
-This is a simple piece of code which I hope to use to connect to Streamlit to run and deploy the app (currently not in use, but I am still keeping it here)
+A very simple initial project to try using Streamlit to get a very basic website up and running
